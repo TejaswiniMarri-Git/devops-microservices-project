@@ -1,6 +1,5 @@
 const express = require('express');
 const cors = require('cors');
-
 const app = express();
 const PORT = process.env.PORT || 3001;
 
@@ -21,6 +20,15 @@ app.get('/api/users', (req, res) => {
     { id: 2, name: 'Jane Smith', role: 'Cloud Architect' },
     { id: 3, name: 'Mike Johnson', role: 'SRE' }
   ]);
+});
+
+// New endpoint - add before app.listen()
+app.get('/api/status', (req, res) => {
+  res.json({ 
+    message: 'CI/CD Pipeline Working!',
+    version: '2.0',
+    deployed: new Date()
+  });
 });
 
 app.listen(PORT, () => {
