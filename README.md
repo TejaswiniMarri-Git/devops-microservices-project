@@ -45,6 +45,16 @@ devops-microservices-project/
 └── docker-compose.yml    # Local development
 ```
 
+## 📸 Screenshots
+
+Key highlights:
+- ✅ Automated GitHub Actions pipeline
+- ✅ Docker images published to Docker Hub
+- ✅ Running application (frontend + backend)
+- ✅ Complete project structure
+
+[View Screenshots →](./screenshots)
+
 ## Technologies
 - Node.js, Express, React
 - Docker, Kubernetes
