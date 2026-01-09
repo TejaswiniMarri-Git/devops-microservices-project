@@ -35,6 +35,21 @@ npm install
 npm start
 ```
 
+## Architecture
+
+### Application Architecture
+![Application Architecture](./screenshots/architecture-diagram.png)
+
+### CI/CD Pipeline Flow
+![CI/CD Pipeline](./screenshots/cicd-pipeline-diagram.png)
+
+The architecture demonstrates:
+- **Microservices Design**: Separate frontend and backend services
+- **Containerization**: Docker multi-stage builds for optimization
+- **Automated CI/CD**: GitHub Actions for continuous integration and deployment
+- **Container Registry**: Docker Hub for image distribution
+- **Security**: Automated vulnerability scanning with Trivy
+
 ## Project Structure
 ```
 devops-microservices-project/
